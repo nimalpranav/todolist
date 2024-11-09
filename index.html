@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="todo-container">
+        <h1>Interactive To-Do List</h1>
+
+        <!-- Input Fields for new task -->
+        <input type="text" id="task-title" placeholder="Task Title" />
+        <textarea id="task-desc" placeholder="Task Description"></textarea>
+        
+        <!-- Due date picker -->
+        <input type="date" id="task-due-date" />
+
+        <!-- Priority dropdown -->
+        <select id="task-priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        
+        <!-- Category dropdown -->
+        <select id="task-category">
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+
+        <button id="add-task-btn">Add Task</button>
+
+        <!-- Task Filters: Categories and Status -->
+        <div class="filters">
+            <button id="all-tasks-btn">All</button>
+            <button id="work-tasks-btn">Work</button>
+            <button id="personal-tasks-btn">Personal</button>
+            <button id="shopping-tasks-btn">Shopping</button>
+        </div>
+
+        <div class="filters">
+            <button id="completed-tasks-btn">Completed</button>
+            <button id="pending-tasks-btn">Pending</button>
+        </div>
+
+        <!-- To-Do List -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
